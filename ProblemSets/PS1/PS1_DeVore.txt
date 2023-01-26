@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+
+\title{Problem Set 1}
+\author{Collin DeVore}
+\date{January 2023}
+
+\begin{document}
+
+\maketitle
+\section*{Question 5}
+\indent{My interest in data science stems from my interest in industrial organization economics. Specifically, I am interested in the economics of transportation. I have been studying the airline industry with Dr. Kosmopoulou and Dr. Kim since the end of my first semester here at the University of Oklahoma. For the industrial organization researchers, there is a large meeting that occurs twice a week with these two professors that includes current and previous students. We meet to share ideas and information, hold each other accountable for continuing our research, and to collaborate on larger projects. This is what brings me to my interest in this course. I would like to start researching topics and get published as soon as possible. That being said, I have had experience coding at a few different schools, but I am not as familiar with some of the newer programs and updates and I have not used many programs for collaboration. Quite a few different Ph.D. candidates recommended this course to me to strengthen my skill set, but I decided to fully commit to taking this course after Dr. Kosmopoulou recommended it to me to ensure that I have the knowledge and experience to take on larger projects next semester. I wholeheartedly agree that the course will be a good use of my time, especially since it will help me to become more familiar with the resources available to researchers at OU and will help me to better understand how to use technology to collaborate with others more optimally. At this time I am unsure of what I would like to do for a project for this course, but I have been collecting research ideas over the past couple of years that I think would help me to find a worthwhile question for research. After graduation, I plan to apply for jobs where I can continue research and publishing. I am open to occupations within academia, the government sector, or the private sector, but I have a slight preference for getting a job within the government sector. This preference stems from the idea that my work may have a better chance to influence regulations if it occurs within the system. Furthermore, I may be able to get ahold of data sets that are not necessarily open to the public. This is only a slight preference, however, since I think that teaching college students or working for a private firm may be just as fun. As far as location goes, I would like to live near Dallas so that my wife can continue her occupation at American Airlines, but she has made sure to let me know that we can move anywhere after graduation, particularly if the location is in Colorado or Seattle. Overall, I am looking forward to this course and all of the materials that will be taught.}\\
+
+\section*{Equation}
+\noindent{\textbf{Inline}}\\
+ \\
+\(a^2 + b^2 = c^2\)\\
+ \\
+ \\
+\textbf{Display}\\
+ \\
+\begin{displaymath}
+a^2 + b^2 = c^2
+\end{displaymath}
+
+\end{document}
+
+
