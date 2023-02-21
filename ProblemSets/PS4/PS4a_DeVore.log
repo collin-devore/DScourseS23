@@ -1,0 +1,5 @@
+/home/ouecon017/DScourseS23/ProblemSets/PS4
+Mon Feb 20 16:09:02 CST 2023
+srun: error: Slurm job 14205963 has expired
+srun: Check SLURM_JOB_ID environment variable. Expired or invalid job 14205963
+slurmstepd: error: acct_gather_profile/influxdb _send_data: curl_easy_perform failed to send data (discarded). Reason: Couldn't resolve host name
