@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+\title{Problem Set 7}
+\author{Collin DeVore}
+\date{March 2023}
+
+\begin{document}
+
+\maketitle
+
+\section*{Question 6}
+\begin{table}
+\centering
+\begin{tabular}[t]{lrrrrrrr}
+\toprule
+  & Unique (\#) & Missing (\%) & Mean & SD & Min & Median & Max\\
+\midrule
+logwage & 670 & 25 & \num{1.6} & \num{0.4} & \num{0.0} & \num{1.7} & \num{2.3}\\
+hgc & 16 & 0 & \num{13.1} & \num{2.5} & \num{0.0} & \num{12.0} & \num{18.0}\\
+tenure & 259 & 0 & \num{6.0} & \num{5.5} & \num{0.0} & \num{3.8} & \num{25.9}\\
+age & 13 & 0 & \num{39.2} & \num{3.1} & \num{34.0} & \num{39.0} & \num{46.0}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\indent{logwage is missing 560 observations out of 2,229 observations. In percentage terms, this is 25\%. Given that these are the missing values that are left after omitting the missing values for hgc and tenure, it seems likely that these values are missing completely at random. For missing at random, we would need to be able to explain some of the missing values using other variables, which is clearly not the case here. For missing not at random, we would need to be able to have an explanation for why some of the variables are missing, which does not seem to be the case. The NA's appear to be both random and independent of other missing values from other variables, so this is likely missing completely at random.}\\
+
+
+\section*{Question 7}
+\begin{table}
+\centering
+\hspace{-5.188cm}\begin{tabular}[t]{lcccc}
+\toprule
+  & Listwise Deletion & Mean Imputation & Predicted Values & Multiple Implementation\\
+\midrule
+(Intercept) & \num{0.639} & \num{0.835} & \num{0.639} & \num{0.659}\\
+ & (\num{0.146}) & (\num{0.115}) & (\num{0.111}) & (\num{0.136})\\
+hgc & \num{0.062} & \num{0.049} & \num{0.062} & \num{0.061}\\
+ & (\num{0.005}) & (\num{0.004}) & (\num{0.004}) & (\num{0.005})\\
+collegenot college grad & \num{0.146} & \num{0.160} & \num{0.146} & \num{0.135}\\
+ & (\num{0.035}) & (\num{0.026}) & (\num{0.025}) & (\num{0.029})\\
+tenure & \num{0.023} & \num{0.015} & \num{0.023} & \num{0.023}\\
+ & (\num{0.002}) & (\num{0.001}) & (\num{0.001}) & (\num{0.002})\\
+age & \num{-0.001} & \num{-0.001} & \num{-0.001} & \num{-0.001}\\
+ & (\num{0.003}) & (\num{0.002}) & (\num{0.002}) & (\num{0.003})\\
+marriedsingle & \num{-0.024} & \num{-0.029} & \num{-0.024} & \num{-0.020}\\
+ & (\num{0.018}) & (\num{0.014}) & (\num{0.013}) & (\num{0.018})\\
+\midrule
+Num.Obs. & \num{1668} & \num{2220} & \num{2220} & \num{2220}\\
+Num.Imp. &  &  &  & \num{5}\\
+R2 & \num{0.195} & \num{0.132} & \num{0.267} & \num{0.219}\\
+R2 Adj. & \num{0.192} & \num{0.130} & \num{0.266} & \num{0.217}\\
+AIC & \num{1206.3} & \num{1132.6} & \num{966.2} & \\
+BIC & \num{1244.3} & \num{1172.5} & \num{1006.2} & \\
+Log.Lik. & \num{-596.161} & \num{-559.289} & \num{-476.123} & \\
+F & \num{80.411} & \num{67.422} & \num{161.526} & \\
+RMSE & \num{0.35} & \num{0.31} & \num{0.30} & \\
+\bottomrule
+\end{tabular}\hspace{-5cm}
+\end{table}
+
+\indent{For my values, mean imputation appears to be the most inaccurate predictor. All of the other values are extremely similar. This makes sense, given that one of these methods used predictive values based off of another. One issue I am seeing, however, is that most of these values are more than 0.02 away from the true value. Given that 25\% of the values in the dataset are now estimated in different ways, however, it makes sense that these estimates would not be entirely accurate. For the predicted values method, the coefficient estimate is $0.062$, which is the same value as for listwise deletion. Multiple implementation is close to this value at $0.061$. These values would suggest to me that the true coefficient would be closer to 0.06, so it is odd that these two estimates seem so much lower.}\\
+
+
+\section*{Question 8}
+\indent{I have spoken to Dr. Kim, Dr. Kosmopoulou, and Yue about my project. The data is gathered and I will be meeting with Yue to get it tomorrow. Basically, we will run regressions to estimate the closure rate of small businesses during the pandemic. Yue and I will be working on this at the same time, and we will be combining anything interesting that we find. We have county level vaccination data, which may mean that our basic panel regression model may adapt into a different-in-difference style of regression. Either way, I should be able to turn in a project that has a ton of my own work.}\\
+\end{document}
