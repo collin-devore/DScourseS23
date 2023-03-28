@@ -1,0 +1,31 @@
+\begin{table}
+\centering
+\begin{tabular}[t]{lcccc}
+\toprule
+  & Listwise Deletion & Mean Imputation & Predicted Values & Multiple Implementation\\
+\midrule
+(Intercept) & \num{0.639} & \num{0.835} & \num{0.639} & \num{0.659}\\
+ & (\num{0.146}) & (\num{0.115}) & (\num{0.111}) & (\num{0.136})\\
+hgc & \num{0.062} & \num{0.049} & \num{0.062} & \num{0.061}\\
+ & (\num{0.005}) & (\num{0.004}) & (\num{0.004}) & (\num{0.005})\\
+collegenot college grad & \num{0.146} & \num{0.160} & \num{0.146} & \num{0.135}\\
+ & (\num{0.035}) & (\num{0.026}) & (\num{0.025}) & (\num{0.029})\\
+tenure & \num{0.023} & \num{0.015} & \num{0.023} & \num{0.023}\\
+ & (\num{0.002}) & (\num{0.001}) & (\num{0.001}) & (\num{0.002})\\
+age & \num{-0.001} & \num{-0.001} & \num{-0.001} & \num{-0.001}\\
+ & (\num{0.003}) & (\num{0.002}) & (\num{0.002}) & (\num{0.003})\\
+marriedsingle & \num{-0.024} & \num{-0.029} & \num{-0.024} & \num{-0.020}\\
+ & (\num{0.018}) & (\num{0.014}) & (\num{0.013}) & (\num{0.018})\\
+\midrule
+Num.Obs. & \num{1668} & \num{2220} & \num{2220} & \num{2220}\\
+Num.Imp. &  &  &  & \num{5}\\
+R2 & \num{0.195} & \num{0.132} & \num{0.267} & \num{0.219}\\
+R2 Adj. & \num{0.192} & \num{0.130} & \num{0.266} & \num{0.217}\\
+AIC & \num{1206.3} & \num{1132.6} & \num{966.2} & \\
+BIC & \num{1244.3} & \num{1172.5} & \num{1006.2} & \\
+Log.Lik. & \num{-596.161} & \num{-559.289} & \num{-476.123} & \\
+F & \num{80.411} & \num{67.422} & \num{161.526} & \\
+RMSE & \num{0.35} & \num{0.31} & \num{0.30} & \\
+\bottomrule
+\end{tabular}
+\end{table}
