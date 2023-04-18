@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\newcolumntype{d}{S[
+    input-open-uncertainty=,
+    input-close-uncertainty=,
+    parse-numbers = false,
+    table-align-text-pre=false,
+    table-align-text-post=false
+ ]}
+
+\title{Problem Set 10}
+\author{Collin DeVore}
+\date{April 2023}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 10}
+\begin{table}
+\centering
+\hspace{-6.5cm}\begin{tabular}[t]{lllllllll}
+\toprule
+penalty & .estimate & alg & cost_complexity & tree_depth & min_n & .config & hidden_units & neighbors\\
+\midrule
+0.00 & 0.85 & logit &  &  &  & NA &  & \\
+ &  & NA & 0.00 & 20.00 & 10.00 & Preprocessor1_Model004 &  & \\
+1.00 &  & NA &  &  &  & Preprocessor1_Model080 & 8.00 & \\
+ &  & NA &  &  &  & Preprocessor1_Model30 &  & 30.00\\
+\bottomrule
+\end{tabular}\hspace{-6.5cm}
+\end{table}
+\indent{It seems that I am not quite receiving the proper estimates, which may mean that I have done something wrong. Nonetheless, the logit estimate looks fine. Of course, I was not able to run the SVM model at all since it was taking too much time to run.}\\
+
+\end{document}
